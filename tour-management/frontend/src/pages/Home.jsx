@@ -10,7 +10,7 @@ import experienceImg from "../assets/images/experience.png";
 import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/ServiceList";
 import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
-
+import MasconryTmagesGallery from "../components/Image-gallery/MasconryTmagesGallery";
 const Home = () => {
   return (
     <>
@@ -130,11 +130,29 @@ const Home = () => {
           <Row>
             <Col lg="12">
               <Subtitle subtitle={"Gallary"} />
+              <h2 className="gallery__title">Visit our customers gallery</h2>
+            </Col>
+            <Col lg="12">
+              <MasconryTmagesGallery />
             </Col>
           </Row>
         </Container>
       </section>
       {/* -------- gallry sections end ----------*/}
+
+      {/* -------- testimonials sections sstart ----------*/}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12">
+              <Subtitle subtitle={"Fans Love"} />
+
+              <h2 className="testimonial__title">What our fans say about us</h2>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      {/* -------- testimonials sections end ----------*/}
     </>
   );
 };
